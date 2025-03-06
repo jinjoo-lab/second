@@ -23,6 +23,12 @@ public class Window {
 
     private String type;
 
+    @PostPersist
+    public void onPostPersist(){
+        PhoneFixWorkRequested phoneFixWorkRequested = new PhoneFixWorkRequested(this);
+        phoneFixWorkRequested.publishAfterCommit();
+    }
+
     public static WindowRepository repository() {
         WindowRepository windowRepository = WindowApplication.applicationContext.getBean(
             WindowRepository.class

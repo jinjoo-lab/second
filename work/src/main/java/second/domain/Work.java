@@ -36,25 +36,7 @@ public class Work {
     public static void phoneFixWork(
         PhoneFixWorkRequested phoneFixWorkRequested
     ) {
-        //implement business logic here:
-
-        /** Example 1:  new item 
-        Work work = new Work();
-        repository().save(work);
-
-        */
-
-        /** Example 2:  finding and process
-        
-
-        repository().findById(phoneFixWorkRequested.get???()).ifPresent(work->{
-            
-            work // do something
-            repository().save(work);
-
-
-         });
-        */
+        System.out.println("PhoeFixWorkRequested");
 
     }
     //>>> Clean Arch / Port Method
